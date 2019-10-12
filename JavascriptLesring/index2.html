@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Добавим стили mocha для отображения результатов  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <!-- Добавляем сам фреймоворк mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        // включаем режим тестоирования в стиле BDD
+        mocha.setup('bdd');
+    </script>
+    <!-- добавляем chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // chai предоставляем большое количество функцийю Объявим assert глобально
+        let assert = chai.assert;
+    </script>
+    <meta charset="UTF-8">
+    <title>Погоняем mocha и шарманку</title>
+</head>
+<body>
+
+<script>
+    function pow(x, n) {
+        /*     */
+
+    }
+</script>
+
+<!-- скрипт со спецификацией 9describe, it -->
+<script src="test.js"></script>
+
+<!-- элемент с id='mocha" будет содержать результаты тестов -->
+<div id="mocha"></div>
+
+<!--запускаем тесты!v-->
+<script>
+    mocha.run();
+</script>
+</body>
+</html>
