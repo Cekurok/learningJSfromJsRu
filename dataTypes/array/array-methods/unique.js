@@ -12,7 +12,8 @@
 'use strict';
 
 function unique(arr) {
-    return arr.filter((value, index, arr) => arr.indexOf(value) === index);
+    // return arr.filter((value, index, arr) => arr.indexOf(value) === index);
+    return [...new Set(arr)];
 }
 
 let strings = ["кришна", "кришна", "харе", "харе",
